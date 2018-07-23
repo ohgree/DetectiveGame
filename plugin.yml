@@ -1,0 +1,12 @@
+name: DetectiveGame420
+author: InfectedDuck
+depend: [Citizens]
+version: 0.0.4-BETA-SNAPSHOT
+main: com.icloud.infectedduck.detectivegame.DetectiveGame
+description: >
+             추리게임[420] by. 감염오리
+             블로그 http://minjooon123.blog.me | 트위터 @InfectedDuck_KR | SkypeID minjooon123
+commands:
+   dg:
+      description: 추리게임[420]의 명령어를 보여줌.
+      usage: /<command> [start|setup|info|license]

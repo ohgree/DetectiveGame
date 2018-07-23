@@ -1,0 +1,51 @@
+/*
+ *  DetectiveGame420 - A bukkit plugin for Detective Games - A bukkit plugin for Detective Games
+ *  Copyright (C) 2015  InfectedDuck
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  This program is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *  Contact: minjooon123@naver.com | Skype: minjooon123
+ */
+
+package com.icloud.infectedduck.detectivegame.npcs;
+
+import com.icloud.infectedduck.detectivegame.types.NpcBase;
+import com.icloud.infectedduck.detectivegame.utils.ColorArmour;
+import com.icloud.infectedduck.detectivegame.utils.HeadHandler;
+import org.bukkit.inventory.ItemStack;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Created by InfectedDuck on 15. 9. 26..
+ */
+public class Npc7 extends NpcBase {
+    private ItemStack[] npcArmour = new ItemStack[4];
+    public Npc7() {
+        ItemStack head = HeadHandler.CreateHead(true, "Npc7", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY4NWEwYmU3NDNlOTA2N2RlOTVjZDhjNmQxYmEyMWFiMjFkMzczNzFiM2Q1OTcyMTFiYjc1ZTQzMjc5In19fQ==");
+        //Twitter Head
+        npcArmour = ColorArmour.getColoredArmour(0x32d2dc);//skyblue
+        npcArmour[0] = head;
+
+
+        initNpc(7, "퍼거슨(Twitter)", "Notch", Arrays.asList(npcArmour),
+                "RT @퍼거슨 \'트위터는 인생의 낭비다\'",
+                "@player 혼자 있고 싶네요 모두 나가주세요",
+                "@player 님들 팔로우 부탁해요",
+                "\'저 새는 해로운 새다.\' #마오쩌둥",
+                "@마오쩌둥 니가 내 친구들을 죽인 그놈이냐?",
+                "#안녕하세요 #반가워요 #팔로우해주세요 #팔로우");
+    }
+}
